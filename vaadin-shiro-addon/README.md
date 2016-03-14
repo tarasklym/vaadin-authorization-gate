@@ -1,6 +1,6 @@
 Authorization Vaadin add-on based on the AspectJ and Shiro. This add-on based on the vaadin-gate-addon root project. 
 
-What is does?
+What it does?
 Depends on the components data this add-on hide or show, enable or disable Vaadin AbstractComponent, such as Button, TextField etc.
 
 How it does?

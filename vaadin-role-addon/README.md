@@ -1,6 +1,6 @@
 This is Role Based Authorization Manager implementation that extends vaadin-gate-addon.
 
-What is does?
+What it does?
 Depends on the components data this add-on hide or show, enable or disable Vaadin AbstractComponent, such as Button, TextField etc.
 
 How it does?
