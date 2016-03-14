@@ -1,12 +1,13 @@
+#Vaadin authorization shiro gate addon
 Authorization Vaadin add-on based on the AspectJ and Shiro. This add-on based on the vaadin-gate-addon root project. 
 
-What it does?
+##What it does?
 Depends on the components data this add-on hide or show, enable or disable Vaadin AbstractComponent, such as Button, TextField etc.
 
-How it does?
+##How it does?
 This add-on use AspectJ to intercept Vaadin methods calls and depends on the Authorization Manager shows components.
 
-How to use?
+##How to use?
 All Vaadin AbstractComponent support setData(Object) and getData(Object) methods that allows set and get components  permission information. For current version addon support string base permissions. For more details about permissions read Apache Shiro documentation.  
 Supported Permissions strings.
 1. no component data (by default permit all)

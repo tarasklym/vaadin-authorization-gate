@@ -1,12 +1,13 @@
+#Vaadin authorization role gate addon
 This is Role Based Authorization Manager implementation that extends vaadin-gate-addon.
 
-What it does?
+##What it does?
 Depends on the components data this add-on hide or show, enable or disable Vaadin AbstractComponent, such as Button, TextField etc.
 
-How it does?
+##How it does?
 This add-on use AspectJ to intercept Vaadin methods calls and depends on the Authorization Manager shows components.
 
-How to use?
+##How to use?
 All Vaadin AbstractComponent support setData(Object) and getData(Object) methods that allows set and get components  role information. Set in the component data role that 
 Supported Role strings.
 1. no component data (by default permit all)

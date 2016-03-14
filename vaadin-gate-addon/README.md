@@ -1,12 +1,13 @@
+#Vaadin authorization gate addon
 This is AspectJ based Vaadin Authorization add-on.
 
-What is does?
+##What it does?
 Depends on the components data this add-on hide or show, enable or disable Vaadin AbstractComponent, such as Button, TextField etc.
 
-How it does?
+##How it does?
 This add-on use AspectJ to intercept Vaadin methods calls and depends on the Authorization Manager show components.
 
-How to use?
+##How to use?
 Maven:
 Add one of the implementation to the Maven dependencies:
 		<dependency>
@@ -41,7 +42,7 @@ Add one of the implementation to the Maven dependencies:
 				</executions>
 			</plugin>
 		
-Known implementation.
+##Known implementation.
 1. Role Based.
 2. Apache Shiro permission based.
 3. Spring Security. (not implemented)
