@@ -21,6 +21,7 @@ To use this addon you need to add dependencies and plugin to the maven.
 			<authorization-gate-artifactId>authorization-gate-role</authorization-gate-artifactId>
 			<authorization-gate-version>1.0.0</authorization-gate-version>
 		</properties>
+		...
 		<dependency>
 			<groupId>com.castleby</groupId>
 			<artifactId>${authorization-gate-artifactId}</artifactId>
@@ -53,9 +54,11 @@ To use this addon you need to add dependencies and plugin to the maven.
 				</executions>
 			</plugin>
 ```
+
 ###Vaadin:
-<pre>
+```java
         Button adminButton = new Button();
         adminButton.setData("admin");
-</pre>
+```
+
 That is mean that this component will be visible for the user with role "admin" and will not be visible for the users that do not have this role.

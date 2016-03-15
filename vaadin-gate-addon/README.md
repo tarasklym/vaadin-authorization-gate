@@ -42,8 +42,11 @@ Add one of the implementation to the Maven dependencies:
 					</execution>
 				</executions>
 			</plugin>
-```		
+```
+
 ##Known implementation.
 1. Role Based.
+
 2. Apache Shiro permission based.
+
 3. Spring Security. (not implemented)

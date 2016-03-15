@@ -24,6 +24,7 @@ To use this addon you need to add dependencies and plugin to the maven.
 			<authorization-gate-artifactId>authorization-gate-shiro</authorization-gate-artifactId>
 			<authorization-gate-version>1.0.0</authorization-gate-version>
 		</properties>
+		...
 		<dependency>
 			<groupId>com.castleby</groupId>
 			<artifactId>${authorization-gate-artifactId}</artifactId>
@@ -56,11 +57,32 @@ To use this addon you need to add dependencies and plugin to the maven.
 				</executions>
 			</plugin>
 ```
+###web.xml
+```xml
+<listener>
+    <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
+</listener>
+...
+<filter>
+    <filter-name>ShiroFilter</filter-name>
+    <filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
+</filter>
+
+<filter-mapping>
+    <filter-name>ShiroFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher> 
+    <dispatcher>FORWARD</dispatcher> 
+    <dispatcher>INCLUDE</dispatcher> 
+    <dispatcher>ERROR</dispatcher>
+</filter-mapping>
+```
+
 ###Vaadin:
-<pre>
+```java
         Button adminButton = new Button();
         adminButton.setData("buton1");
-</pre>  
+``` 
 
 ###shiro.ini
 <pre>
@@ -75,5 +97,6 @@ role2 = buton1:read,modify
 </pre>
 
 For "user1" that has "role1" permissions, component will be displayed but in read only mode (disabled), so it would be impossible to click this button.
+
 For "user2" that has "role2" permissions, component will be displayed and will be possible to click.
 To have more details check demo projects.
