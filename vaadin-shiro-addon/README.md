@@ -17,7 +17,8 @@ Supported Permissions strings.
 5. Apache Shiro Permission (not implemented yet)
 
 To use this addon you need to add dependencies and plugin to the maven.
-Maven:
+###Maven:
+<code>
 		<properties>
 			...
 			<authorization-gate-artifactId>authorization-gate-shiro</authorization-gate-artifactId>
@@ -54,13 +55,15 @@ Maven:
 					</execution>
 				</executions>
 			</plugin>
-		
-Vaadin:
+</code>		
+###Vaadin:
+<code>
         Button adminButton = new Button();
         adminButton.setData("buton1");
-        
+</code>  
 
-shiro.ini
+###shiro.ini
+<code>
 [users]
 admin = admin, admin
 user1 = user1, role1
@@ -69,7 +72,7 @@ user2 = user2, role2
 [roles]
 role1 = buton1:read
 role2 = buton1:read,modify
-
+</code>
 
 For "user1" that has "role1" permissions, component will be displayed but in read only mode (disabled), so it would be impossible to click this button.
 For "user2" that has "role2" permissions, component will be displayed and will be possible to click.
