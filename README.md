@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tarasklym/vaadin-authorization-gate.svg?branch=master)](https://travis-ci.org/tarasklym/vaadin-authorization-gate)
+
 # Vaadin-authorization-gate
 This project contains:
 
