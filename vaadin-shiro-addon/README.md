@@ -18,7 +18,6 @@ Supported Permissions strings.
 
 To use this addon you need to add dependencies and plugin to the maven.
 ###Maven:
-<pre>
 ```xml
 		<properties>
 			...
@@ -56,7 +55,7 @@ To use this addon you need to add dependencies and plugin to the maven.
 					</execution>
 				</executions>
 			</plugin>
-</pre>		
+```
 ###Vaadin:
 <pre>
         Button adminButton = new Button();
