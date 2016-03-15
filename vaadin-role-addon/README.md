@@ -14,7 +14,8 @@ Supported Role strings.
 2. role data in the component
 
 To use this addon you need to add dependencies and plugin to the maven.
-Maven:
+###Maven:
+<pre>
 		<properties>
 			...
 			<authorization-gate-artifactId>authorization-gate-role</authorization-gate-artifactId>
@@ -51,9 +52,10 @@ Maven:
 					</execution>
 				</executions>
 			</plugin>
-		
-Vaadin:
+</pre>		
+###Vaadin:
+<pre>
         Button adminButton = new Button();
         adminButton.setData("admin");
-
+</pre>
 That is mean that this component will be visible for the user with role "admin" and will not be visible for the users that do not have this role.

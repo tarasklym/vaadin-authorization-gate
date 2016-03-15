@@ -18,7 +18,7 @@ Supported Permissions strings.
 
 To use this addon you need to add dependencies and plugin to the maven.
 ###Maven:
-<code>
+<pre>
 		<properties>
 			...
 			<authorization-gate-artifactId>authorization-gate-shiro</authorization-gate-artifactId>
@@ -55,15 +55,15 @@ To use this addon you need to add dependencies and plugin to the maven.
 					</execution>
 				</executions>
 			</plugin>
-</code>		
+</pre>		
 ###Vaadin:
-<code>
+<pre>
         Button adminButton = new Button();
         adminButton.setData("buton1");
-</code>  
+</pre>  
 
 ###shiro.ini
-<code>
+<pre>
 [users]
 admin = admin, admin
 user1 = user1, role1
@@ -72,7 +72,7 @@ user2 = user2, role2
 [roles]
 role1 = buton1:read
 role2 = buton1:read,modify
-</code>
+</pre>
 
 For "user1" that has "role1" permissions, component will be displayed but in read only mode (disabled), so it would be impossible to click this button.
 For "user2" that has "role2" permissions, component will be displayed and will be possible to click.

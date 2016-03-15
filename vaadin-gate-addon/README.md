@@ -8,8 +8,9 @@ Depends on the components data this add-on hide or show, enable or disable Vaadi
 This add-on use AspectJ to intercept Vaadin methods calls and depends on the Authorization Manager show components.
 
 ##How to use?
-Maven:
+###Maven:
 Add one of the implementation to the Maven dependencies:
+<pre>
 		<dependency>
 			<groupId>com.castleby</groupId>
 			<artifactId>${authorization-gate-artifactId}</artifactId>
@@ -41,7 +42,7 @@ Add one of the implementation to the Maven dependencies:
 					</execution>
 				</executions>
 			</plugin>
-		
+</pre>		
 ##Known implementation.
 1. Role Based.
 2. Apache Shiro permission based.
