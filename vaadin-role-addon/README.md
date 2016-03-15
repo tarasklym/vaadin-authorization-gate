@@ -16,6 +16,7 @@ Supported Role strings.
 To use this addon you need to add dependencies and plugin to the maven.
 ###Maven:
 <pre>
+```xml
 		<properties>
 			...
 			<authorization-gate-artifactId>authorization-gate-role</authorization-gate-artifactId>

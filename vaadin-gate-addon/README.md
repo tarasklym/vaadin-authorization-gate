@@ -11,6 +11,7 @@ This add-on use AspectJ to intercept Vaadin methods calls and depends on the Aut
 ###Maven:
 Add one of the implementation to the Maven dependencies:
 <pre>
+```xml
 		<dependency>
 			<groupId>com.castleby</groupId>
 			<artifactId>${authorization-gate-artifactId}</artifactId>

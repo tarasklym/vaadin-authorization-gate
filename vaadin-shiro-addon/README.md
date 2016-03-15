@@ -19,6 +19,7 @@ Supported Permissions strings.
 To use this addon you need to add dependencies and plugin to the maven.
 ###Maven:
 <pre>
+```xml
 		<properties>
 			...
 			<authorization-gate-artifactId>authorization-gate-shiro</authorization-gate-artifactId>
